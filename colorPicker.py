@@ -1,5 +1,4 @@
-
-# Chapter 7'dekinin input olarak kamera görüntüsü alan hali
+# It reads your camera and let you find HSV values for real objects.
 import cv2
 import numpy as np 
  
@@ -14,9 +13,9 @@ cv2.namedWindow("HSV")
 cv2.resizeWindow("HSV", 640, 240)
 cv2.createTrackbar("Hue Min", "HSV", 0, 179, empty)              # Trackbar name, window name, min value, max value(hue max value is 179 in opencv), what function to call on change, 0 - 179
 cv2.createTrackbar("Hue Max", "HSV", 179, 179, empty)            # 179 - 179
-cv2.createTrackbar("Saturation Min", "HSV", 0, 255, empty)      # 0 - 255
+cv2.createTrackbar("Saturation Min", "HSV", 0, 255, empty)       # 0 - 255
 cv2.createTrackbar("Saturation Max", "HSV", 255, 255, empty)     # 255 - 255
-cv2.createTrackbar("Value Min", "HSV", 0, 255, empty)           # 0 - 255
+cv2.createTrackbar("Value Min", "HSV", 0, 255, empty)            # 0 - 255
 cv2.createTrackbar("Value Max", "HSV", 255, 255, empty)          # 255 - 255
  
 while True:
