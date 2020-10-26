@@ -1,6 +1,7 @@
 # Blackboard Collaborate auto raise hands if raised hands detected in some parts of the screen
 # It can act as a attendance bot if lecturer takes attendance by raised hands
-# One of the downside is you have to keep Blackboard on top or don't obstruct the locations of the screen which the program needs
+# One of the downside is you have to keep Blackboard on top and you have to switch to list of people instead of chat tab
+# or don't obstruct the locations of the screen which the program needs
 # I know that it can be wrote with less code but i didn't put too much effort on this and used some codes from my other projects and rearranged them
 import time
 import cv2
@@ -43,6 +44,9 @@ flag = 0                                        # for not spamming clicks if the
 
 with mss.mss() as sct:
     monitor = {"top": 860, "left": 1562, "width": 32, "height": 32}         # where to check for raised hands?
+                                                                            # this is basically the most important line
+                                                                            # this coordinates shows 20th person in list of people in my case
+                                                                            # you have to set it according to the number of people in your class
 
     while "Screen capturing":
         last_time = time.time()
