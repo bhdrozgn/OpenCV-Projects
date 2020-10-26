@@ -1,4 +1,4 @@
-# webcam paint, akşam lamba ışıkları altında
+# webcam paint
 import cv2
 import numpy as np
 
