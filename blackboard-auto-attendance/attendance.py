@@ -45,7 +45,7 @@ flag = 0                                        # for not spamming clicks if the
 with mss.mss() as sct:
     monitor = {"top": 860, "left": 1562, "width": 32, "height": 32}         # where to check for raised hands?
                                                                             # this is basically the most important line
-                                                                            # this coordinates shows 20th person in list of people in my case
+                                                                            # these coordinates shows 20th person in list of people in my case
                                                                             # you have to set it according to the number of people in your class
 
     while "Screen capturing":
